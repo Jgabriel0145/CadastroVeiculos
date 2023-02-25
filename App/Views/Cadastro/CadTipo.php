@@ -4,28 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro de Tipos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <?php include 'style.php'?>
 </head>
 
 <body>
-    
-    <form method="post" action="/tipo/form/save">
-        <h1>Tipo</h1>
+        
+    <div>
+        <form method="post" action="/tipo/form/save">
+            <h1>Tipo</h1>
 
-        <input type="hidden" value="<?= $model->id ?>" name="id" />
+            <input type="hidden" value="<?= $model->id ?>" name="id" />
 
-        <label for="nome_tipo">Nome:</label>
-        <input type="text" name="nome_tipo" id="nome_tipo" value="<?= $model->tipo ?>">
+            <label for="nome_tipo">Nome:</label>
+            <input type="text" placeholder="Ex: Carro, Moto, etc..."  name="nome_tipo" id="nome_tipo" value="<?= $model->tipo ?>">
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <br>
+        <button onclick="document.location='/'" >Voltar</button>
+    </div>
 
-        <button type="submit">Enviar</button>
-    </form>
-    
-    <br><br>
-    <button onclick="document.location='/'" >Voltar</button>
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

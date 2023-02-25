@@ -3,28 +3,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Listagem de Marcas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-    <table>
+<table class="table">
         <thead>
-            <th>#</th>
-            <th>ID</th>
-            <th>Nome</th>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+            </tr>
         </thead>
-            
-
+  
         <tbody>
             <?php foreach($model->rows as $item): ?>
-
                 <tr>
-                    <td>
+                    <th scope="row">
                         <a href="/marca/delete?id=<?= $item->id ?>">X</a>
-                    </td>
+                    </th>
 
-                    <td><a><?= $item->id ?></a></td>
+                    <td>
+                        <a><?= $item->id ?></a>
+                    </td>
 
                     <td>
                         <a href="/marca/form?id=<?= $item->id ?>"><?= $item->marca ?></a>
@@ -38,15 +40,18 @@
             <?php if (count($model->rows) == 0):?>
 
                 <tr>
-                    <td colspan="5">Nenhum registro foi encontrado.</td>
+                    <th scope="row">
+                        <td colspan="5">Nenhum registro foi encontrado.</td>
+                    </th>
                 </tr>
 
             <?php endif?>
         </tbody>
     </table>
 
+
     <br><br>
-    <button onclick="document.location='/'" >Voltar</button>
+    <button onclick="document.location='/'" class="btn btn-primary" style="margin-left: 1%;">Voltar</button>
 
 
 

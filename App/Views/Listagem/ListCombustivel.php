@@ -8,23 +8,26 @@
 </head>
 
 <body>
-    <table>
-        <thead>
-            <th>#</th>
-            <th>ID</th>
-            <th>Nome</th>
-        </thead>
-            
 
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+            </tr>
+        </thead>
+  
         <tbody>
             <?php foreach($model->rows as $item): ?>
-
                 <tr>
-                    <td>
+                    <th scope="row">
                         <a href="/combustivel/delete?id=<?= $item->id ?>">X</a>
-                    </td>
+                    </th>
 
-                    <td><a><?= $item->id ?></a></td>
+                    <td>
+                        <a><?= $item->id ?></a>
+                    </td>
 
                     <td>
                         <a href="/combustivel/form?id=<?= $item->id ?>"><?= $item->nome ?></a>
@@ -38,15 +41,18 @@
             <?php if (count($model->rows) == 0):?>
 
                 <tr>
-                    <td colspan="5">Nenhum registro foi encontrado.</td>
+                    <th scope="row">
+                        <td colspan="5">Nenhum registro foi encontrado.</td>
+                    </th>
                 </tr>
 
             <?php endif?>
         </tbody>
     </table>
 
+
     <br><br>
-    <button onclick="document.location='/'" >Voltar</button>
+    <button onclick="document.location='/'" class="btn btn-primary" style="margin-left: 1%;">Voltar</button>
 
 
 

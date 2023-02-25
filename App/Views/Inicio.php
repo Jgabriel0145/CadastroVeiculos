@@ -4,29 +4,102 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Início</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        html
+        {
+            height: 100%;
+            width: 100%;
+        }
+        
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, cyan, yellow);
+            display: flex;
+            justify-content: center;
+        }
+
+        #div1, #div2
+        {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 2.5%;
+            border-radius: 15px;
+            color: #fff;
+            margin: 1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        input
+        {
+            padding: 15px;
+            outline: none;
+            font-size: 15px;
+            border-radius: 10px;
+
+        }
+
+        button
+        {
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            margin-top: 5px;
+            
+        }
+
+        button:hover{
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+        
+        
+    </style>
 </head>
 
 <body>
     
-    <button onclick="document.location='/combustivel'" >Listagem de Combustíveis</button><br>
-    <button onclick="document.location='/combustivel/form'" >Cadastro de Combustíveis</button><br><br>
+    <div id="div1">
+        <div id="itemdiv">
+            <p>Combustível:</p>
+            <button onclick="document.location='/combustivel/form'" >Cadastro de Combustíveis</button><br>
+            <button onclick="document.location='/combustivel'" >Listagem de Combustíveis</button><br><br>
+        </div>
+        
+        <div id="itemdiv">
+            <p>Fabricante:</p>
+            <button onclick="document.location='/fabricante/form'" >Cadastro de Fabricantes</button><br>
+            <button onclick="document.location='/fabricante'" >Listagem de Fabricantes</button><br><br>
+        </div>
 
-    <button onclick="document.location='/fabricante'" >Listagem de Fabricantes</button><br>
-    <button onclick="document.location='/fabricante/form'" >Cadastro de Fabricantes</button><br><br>
+        <div id="itemdiv">
+            <p>Marca:</p>
+            <button onclick="document.location='/marca/form'" >Cadastro de Marca</button><br>
+            <button onclick="document.location='/marca'" >Listagem de Marca</button><br><br>
+        </div>
+    </div>
     
-    <button onclick="document.location='/marca'" >Listagem de Marca</button><br>
-    <button onclick="document.location='/marca/form'" >Cadastro de Marca</button><br><br>
-    
-    <button onclick="document.location='/tipo'" >Listagem de Tipos de Veículos</button><br>
-    <button onclick="document.location='/tipo/form'" >Cadastro de Tipos de Veículos</button><br><br>
-    
-    <button onclick="document.location='/veiculo'" >Listagem de Veículos</button><br>
-    <button onclick="document.location='/veiculo/form'" >Cadastro de Veículos</button>
+    <br>
+    <div id="div2">
+        <div id="itemdiv">
+            <p>Tipo:</p>
+            <button onclick="document.location='/tipo/form'" >Cadastro de Tipos de Veículos</button><br>
+            <button onclick="document.location='/tipo'" >Listagem de Tipos de Veículos</button><br><br>
+        </div>    
+        
+        <div id="itemdiv">
+            <p>Veículo:</p>
+            <button onclick="document.location='/veiculo/form'" >Cadastro de Veículos</button><br>
+            <button onclick="document.location='/veiculo'" >Listagem de Veículos</button><br><br>
+        </div>
+    </div>
 
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,30 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro de Fabricantes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <?php include 'style.php'?>
 </head>
 
 <body>
     
+<div>
     <form method="post" action="/fabricante/form/save">
         <h1>Fabricante</h1>
 
         <input type="hidden" value="<?= $model->id ?>" name="id" />
 
         <label for="nome_fabricante">Nome:</label>
-        <input type="text" name="nome_fabricante" id="nome_fabricante" value="<?= $model->nome ?>">
+        <input type="text" placeholder="Ex: Ford, Fiat, etc..." name="nome_fabricante" id="nome_fabricante" value="<?= $model->nome ?>"><br><br>
 
         <label for="cnpj_fabricante">CNPJ:</label>
-        <input type="text" name="cnpj_fabricante" id="cnpj_fabricante" value="<?= $model->cnpj ?>">
+        <input type="text" placeholder="12345678000101" name="cnpj_fabricante" id="cnpj_fabricante" value="<?= $model->cnpj ?>"
+        maxlength="14"><br><br>
+        
 
         <button type="submit">Enviar</button>
+        <br>
     </form>
 
-    <br><br>
+    <br>
     <button onclick="document.location='/'" >Voltar</button>
 
+</div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
