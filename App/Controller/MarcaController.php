@@ -31,9 +31,15 @@ class MarcaController extends Controller
         $model->id = $_POST['id'];
         $model->marca = $_POST['nome_marca'];
 
-        $model->save();
-
-        header("Location: /marca");
+        if (empty($model->id) or empty($model->marca))
+        {
+            header('Location: /marca/form');
+        }
+        else
+        {
+            $model->save();
+            header('Location: /marca');
+        }
     }
 
     public static function delete()

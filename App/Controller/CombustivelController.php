@@ -31,9 +31,17 @@ class CombustivelController extends Controller
         $model->id = $_POST['id'];
         $model->nome = $_POST['nome_combustivel'];
 
-        $model->save();
+        if (empty($model->id) or empty($model->nome))
+        {
+            header('Location: /combustivel/form');
+        }
+        else
+        {
+            $model->save();
 
-        header("Location: /combustivel");
+            header("Location: /combustivel");
+        }
+        
     }
 
     public static function delete()
