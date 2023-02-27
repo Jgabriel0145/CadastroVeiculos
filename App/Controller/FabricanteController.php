@@ -32,9 +32,15 @@ class FabricanteController extends Controller
         $model->nome = $_POST['nome_fabricante'];
         $model->cnpj = $_POST['cnpj_fabricante'];
 
-        $model->save();
-
-        header("Location: /fabricante");
+        if (empty($model->id) or empty($model->nome) or empty($model->cnpj))
+        {
+            header('Location: /fabricante/form');
+        }
+        else
+        {
+            $model->save();
+            header('Location: /fabricante');
+        }
     }
 
     public static function delete()

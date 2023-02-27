@@ -31,9 +31,15 @@ class TipoController extends Controller
         $model->id = $_POST['id'];
         $model->tipo = $_POST['nome_tipo'];
 
-        $model->save();
-
-        header("Location: /tipo");
+        if (empty($model->id) or empty($model->tipo))
+        {
+            header('Location: /tipo/form');
+        }
+        else
+        {
+            $model->save();
+            header('Location: /tipo');
+        }
     }
 
     public static function delete()

@@ -72,10 +72,16 @@ class VeiculoController extends Controller
         $model->id_fabricante = $_POST['id_fabricante_veiculo'];
         $model->id_tipo = $_POST['id_tipo_veiculo'];
         $model->id_combustivel = $_POST['id_combustivel_veiculo'];
-        
-        $model->save();
 
-        header("Location: /veiculo");
+        if (empty($model->id) or empty($model->modelo) or empty($model->ano) or empty($model->cor) or empty($model->numero_chassi) or empty($model->km) or empty($model->id_marca) or empty($model->id_fabricante) or empty($model->id_tipo) or empty($model->id_combustivel))
+        {
+            header('Location: /veiculo/form');
+        }
+        else 
+        {
+            $model->save();
+            header('Location: /veiculo');
+        }
     }
 
     public static function delete()
