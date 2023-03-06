@@ -31,7 +31,7 @@ class CombustivelController extends Controller
         $model->id = $_POST['id'];
         $model->nome = $_POST['nome_combustivel'];
 
-        if (empty($model->id) or empty($model->nome))
+        if ($model->id == 0 or trim($model->nome) == '')
         {
             header('Location: /combustivel/form');
         }

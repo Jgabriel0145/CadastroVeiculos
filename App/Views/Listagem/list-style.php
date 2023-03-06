@@ -1,6 +1,6 @@
 <style>
 
-html
+    html
     {
         width: 100%;
         height: 100%;
@@ -9,12 +9,13 @@ html
     body
     {
         font-family: Arial, Helvetica, sans-serif;
-        background-image: url("../img/combustivel.jpg");
+        background-image: linear-gradient(45deg, cyan, yellow);
         background-color: #ccc;
         display: flex;
         justify-content: center;
         padding: 5%;
     }
+
     div
     {
         background-color: rgba(0, 0, 0, 0.9);
@@ -23,6 +24,7 @@ html
         color: #fff;
         width: 100%;
     }
+
     input
     {
         padding: 15px;
@@ -48,6 +50,7 @@ html
         background-color: deepskyblue;
         cursor: pointer;
     }
+
     .btn-excluir
     {
         background-color: red;
@@ -56,14 +59,18 @@ html
         padding: 5px;
         text-decoration:none;
     }
+
     .nome-listagem
     {
         color:white;
         text-decoration:none;
     }
-    th, td{
+
+    th, td
+    {
         color:white;
     }
+    
     h1
     {
         text-align:center;
