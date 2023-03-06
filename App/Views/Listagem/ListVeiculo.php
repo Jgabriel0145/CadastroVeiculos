@@ -11,7 +11,7 @@
 
 <body>
 <div>
-<h1>Listagem de Veiculo</h1><br><br>
+<h1>Listagem de Veiculos</h1><br><br>
 <table class="table">
         <thead>
             <tr>
