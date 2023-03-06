@@ -10,7 +10,6 @@
     {
         font-family: Arial, Helvetica, sans-serif;
         background-image: linear-gradient(45deg, cyan, yellow);
-        background-color: #ccc;
         display: flex;
         justify-content: center;
         padding: 5%;
