@@ -8,6 +8,8 @@ use App\Model\FabricanteModel;
 use App\Model\TipoModel;
 use App\Model\CombustivelModel;
 
+use \Exception;
+
 class VeiculoController extends Controller
 {
     public static function index()
@@ -73,7 +75,7 @@ class VeiculoController extends Controller
         $model->id_tipo = $_POST['id_tipo_veiculo'];
         $model->id_combustivel = $_POST['id_combustivel_veiculo'];
 
-        if (empty($model->id) or empty($model->modelo) or empty($model->ano) or empty($model->cor) or empty($model->numero_chassi) or empty($model->km) or empty($model->id_marca) or empty($model->id_fabricante) or empty($model->id_tipo) or empty($model->id_combustivel))
+        if ($model->id == 0 or trim($model->modelo) == '' or trim($model->ano) == '' or trim($model->cor) == '' or trim($model->numero_chassi) == '' or trim($model->km) == '' or !isset($model->id_marca) or !isset($model->id_fabricante) or !isset($model->id_tipo) or !isset($model->id_combustivel))
         {
             header('Location: /veiculo/form');
         }
