@@ -17,7 +17,6 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">ID</th>
                 <th scope="col">Nome</th>
             </tr>
         </thead>
@@ -28,10 +27,6 @@
                     <th scope="row">
                         <a href="/marca/delete?id=<?= $item->id ?>">X</a>
                     </th>
-
-                    <td>
-                        <a><?= $item->id ?></a>
-                    </td>
 
                     <td>
                         <a href="/marca/form?id=<?= $item->id ?>"><?= $item->marca ?></a>

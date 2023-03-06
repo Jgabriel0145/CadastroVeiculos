@@ -16,7 +16,6 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">ID</th>
                 <th scope="col">Modelo</th>
                 <th scope="col">Ano</th>
                 <th scope="col">Cor</th>
@@ -43,7 +42,6 @@
                         <a href="/combustivel/delete?id=<?= $item_veiculo->id ?>">X</a>
                     </th>
 
-                    <td><a><?= $item_veiculo->id ?></a></td>
 
                     <td>
                         <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->modelo ?></a>
