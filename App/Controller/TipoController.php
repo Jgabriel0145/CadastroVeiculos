@@ -31,7 +31,7 @@ class TipoController extends Controller
         $model->id = $_POST['id'];
         $model->tipo = $_POST['nome_tipo'];
 
-        if (empty($model->id) or empty($model->tipo))
+        if ($model->id == 0 or trim($model->tipo) == '')
         {
             header('Location: /tipo/form');
         }
