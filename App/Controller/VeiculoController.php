@@ -75,7 +75,7 @@ class VeiculoController extends Controller
         $model->id_tipo = $_POST['id_tipo_veiculo'];
         $model->id_combustivel = $_POST['id_combustivel_veiculo'];
 
-        if ($model->id == 0 or trim($model->modelo) == '' or trim($model->ano) == '' or trim($model->cor) == '' or trim($model->numero_chassi) == '' or trim($model->km) == '' or !isset($model->id_marca) or !isset($model->id_fabricante) or !isset($model->id_tipo) or !isset($model->id_combustivel))
+        if ($model->id == 0 or trim($model->modelo) == '' or trim($model->ano) == '' or trim($model->cor) == '' or trim($model->numero_chassi) == '' or trim($model->km) == '' or !isset($model->id_marca) or !isset($model->id_fabricante) or !isset($model->id_tipo) or !isset($model->id_combustivel) or strlen($model->modelo) >= 256 or strlen($model->ano) != 4 or strlen($model->cor) >= 256 or strlen($model->numero_chassi) != 17 or strlen($model->km) <= -1)
         {
             header('Location: /veiculo/form');
         }

@@ -32,19 +32,24 @@
         <input type="hidden" value="<?= $model_veiculo->id ?>" name="id" />
 
         <label for="modelo_veiculo">Modelo:</label>
-        <input type="text" name="modelo_veiculo" id="modelo_veiculo" value="<?= $model_veiculo->modelo ?>"><br>
+        <input type="text" name="modelo_veiculo" id="modelo_veiculo" value="<?= $model_veiculo->modelo ?>"
+                maxlength="255"><br>
 
         <label for="ano_veiculo">Ano:</label>
-        <input type="text" name="ano_veiculo" id="ano_veiculo" value="<?= $model_veiculo->ano ?>"><br>
+        <input type="text" name="ano_veiculo" id="ano_veiculo" value="<?= $model_veiculo->ano ?>"
+                maxlength="4" minlength="4"><br>
 
         <label for="cor_veiculo">Cor:</label>
-        <input type="text" name="cor_veiculo" id="cor_veiculo" value="<?= $model_veiculo->cor ?>"><br>
+        <input type="text" name="cor_veiculo" id="cor_veiculo" value="<?= $model_veiculo->cor ?>"
+                maxlength="255"><br>
 
         <label for="numero_chassi_veiculo">Número do Chassi:</label>
-        <input type="text" name="numero_chassi_veiculo" id="numero_chassi_veiculo" value="<?= $model_veiculo->numero_chassi ?>"><br>
+        <input type="text" name="numero_chassi_veiculo" id="numero_chassi_veiculo" value="<?= $model_veiculo->numero_chassi ?>"
+                maxlength="17" minlength="17"><br>
 
         <label for="km_veiculo">KM:</label>
-        <input type="text" name="km_veiculo" id="km_veiculo" value="<?= $model_veiculo->km ?>"><br>
+        <input type="text" name="km_veiculo" id="km_veiculo" value="<?= $model_veiculo->km ?>"
+                maxlength="255" minlength="1"><br>
 
         <label for="revisao_veiculo">Revisão:</label>
         <input type="checkbox" name="revisao_veiculo" id="revisao_veiculo"><br>
@@ -65,7 +70,8 @@
         <input type="checkbox" name="particular_veiculo" id="particular_veiculo"><br>
 
         <label for="observacao_veiculo">Observação:</label>
-        <input type="text" name="observacao_veiculo" id="observacao_veiculo" value="<?= $model_veiculo->observacao ?>"><br>
+        <input type="text" name="observacao_veiculo" id="observacao_veiculo" value="<?= $model_veiculo->observacao ?>"
+                maxlength="255"><br>
 
         <label for="id_marca_veiculo">Marca:</label>
         <select name="id_marca_veiculo" id="id_marca_veiculo">

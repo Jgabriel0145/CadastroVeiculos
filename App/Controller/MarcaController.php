@@ -31,7 +31,7 @@ class MarcaController extends Controller
         $model->id = $_POST['id'];
         $model->marca = $_POST['nome_marca'];
 
-        if ($model->id == 0 or trim($model->marca) == '')
+        if ($model->id == 0 or trim($model->marca) == '' or strlen($model->marca) >= 256)
         {
             header('Location: /marca/form');
         }

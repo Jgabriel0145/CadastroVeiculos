@@ -32,7 +32,7 @@ class FabricanteController extends Controller
         $model->nome = $_POST['nome_fabricante'];
         $model->cnpj = $_POST['cnpj_fabricante'];
 
-        if ($model->id == 0 or trim($model->nome) == '' or trim($model->cnpj) == '')
+        if ($model->id == 0 or trim($model->nome) == '' or trim($model->cnpj) == '' or strlen($model->nome) >= 256 or strlen($model->cnpj) >= 15)
         {
             header('Location: /fabricante/form');
         }

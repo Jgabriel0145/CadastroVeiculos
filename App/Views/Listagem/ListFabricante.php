@@ -30,10 +30,6 @@
                     </th>
 
                     <td>
-                        <a><?= $item->id ?></a>
-                    </td>
-
-                    <td>
                         <a href="/fabricante/form?id=<?= $item->id ?>"><?= $item->nome ?></a>
                     </td>
 

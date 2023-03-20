@@ -17,7 +17,8 @@
             <input type="hidden" value="<?= $model->id ?>" name="id" />
 
             <label for="nome_combustivel">Nome:</label>
-            <input type="text" placeholder="Combustível" name="nome_combustivel" id="nome_combustivel" value="<?= $model->nome ?>">
+            <input type="text" placeholder="Combustível" name="nome_combustivel" id="nome_combustivel" value="<?= $model->nome ?>"
+                maxlength="255">
             <br><br>
 
 

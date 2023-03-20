@@ -17,7 +17,8 @@
             <input type="hidden" value="<?= $model->id ?>" name="id" />
 
             <label for="nome_tipo">Nome:</label>
-            <input type="text" placeholder="Ex: Carro, Moto, etc..."  name="nome_tipo" id="nome_tipo" value="<?= $model->tipo ?>">
+            <input type="text" placeholder="Ex: Carro, Moto, etc..."  name="nome_tipo" id="nome_tipo" value="<?= $model->tipo ?>"
+                maxlength="255">
             <br><br>
             <button type="submit">Enviar</button>
         </form>

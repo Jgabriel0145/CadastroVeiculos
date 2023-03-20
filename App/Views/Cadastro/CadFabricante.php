@@ -17,11 +17,12 @@
         <input type="hidden" value="<?= $model->id ?>" name="id" />
 
         <label for="nome_fabricante">Nome:</label>
-        <input type="text" placeholder="Ex: Ford, Fiat, etc..." name="nome_fabricante" id="nome_fabricante" value="<?= $model->nome ?>"><br><br>
+        <input type="text" placeholder="Ex: Ford, Fiat, etc..." name="nome_fabricante" id="nome_fabricante" value="<?= $model->nome ?>"
+                maxlength="255"><br><br>
 
         <label for="cnpj_fabricante">CNPJ:</label>
         <input type="text" placeholder="12345678000101" name="cnpj_fabricante" id="cnpj_fabricante" value="<?= $model->cnpj ?>"
-        maxlength="14"><br><br>
+        maxlength="14" minlength="14"><br><br>
         
 
         <button type="submit">Enviar</button>
