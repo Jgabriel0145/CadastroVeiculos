@@ -30,11 +30,11 @@
                     </th>
 
                     <td>
-                        <a href="/fabricante/form?id=<?= $item->id ?>"><?= $item->nome ?></a>
+                        <a href="/fabricante/form?id=<?= $item->id ?>" class="nome-listagem"><?= $item->nome ?></a>
                     </td>
 
                     <td>
-                        <a href="/fabricante/form?id=<?= $item->id ?>"><?= $item->cnpj ?></a>
+                        <a href="/fabricante/form?id=<?= $item->id ?>" class="nome-listagem"><?= $item->cnpj ?></a>
                     </td>
                 </tr>
 

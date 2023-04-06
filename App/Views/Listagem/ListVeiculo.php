@@ -44,91 +44,91 @@
 
 
                     <td>
-                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->modelo ?></a>
+                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem"><?= $item_veiculo->modelo ?></a>
                     </td>
 
                     <td>
-                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->ano ?></a>
+                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem"><?= $item_veiculo->ano ?></a>
                     </td>
 
                     <td>
-                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->cor ?></a>
+                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem"><?= $item_veiculo->cor ?></a>
                     </td>
 
                     <td>
-                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->numero_chassi ?></a>
+                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem"><?= $item_veiculo->numero_chassi ?></a>
                     </td>
 
                     <td>
-                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->km ?></a>
+                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem"><?= $item_veiculo->km ?></a>
                     </td>
 
                     <td>
                         <?php if ($item_veiculo->revisao == 1 or $item_veiculo->revisao == true): ?> 
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Sim</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Não</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
                         <?php endif ?>
                     </td>
 
                     <td>
                         <?php if ($item_veiculo->revisao == 1 or $item_veiculo->sinistro == true): ?> 
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Sim</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Não</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
                         <?php endif ?>
                     </td>
 
                     <td>
                         <?php if ($item_veiculo->revisao == 1 or $item_veiculo->roubo_furto == true): ?> 
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Sim</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Não</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
                         <?php endif ?>
                     </td>
 
                     <td>
                         <?php if ($item_veiculo->revisao == 1 or $item_veiculo->aluguel == true): ?> 
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Sim</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Não</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
                         <?php endif ?>
                     </td>
 
                     <td>
                         <?php if ($item_veiculo->revisao == 1 or $item_veiculo->venda == true): ?> 
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Sim</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Não</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
                         <?php endif ?>
                     </td>
 
                     <td>
                         <?php if ($item_veiculo->revisao == 1 or $item_veiculo->particular == true): ?> 
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Sim</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
-                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>">Não</a>
+                            <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
                         <?php endif ?>
                     </td>
 
                     <td>
-                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->observacao ?></a>
+                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem"><?= $item_veiculo->observacao ?></a>
                     </td>
 
                     <td>
-                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->marca ?></a>
+                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem"><?= $item_veiculo->marca ?></a>
                     </td>
 
                     <td>
-                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->fabricante ?></a>
+                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem"><?= $item_veiculo->fabricante ?></a>
                     </td>
 
                     <td>
-                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->tipo ?></a>
+                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem"><?= $item_veiculo->tipo ?></a>
                     </td>
 
                     <td>
-                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>"><?= $item_veiculo->combustivel ?></a>
+                        <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem"><?= $item_veiculo->combustivel ?></a>
                     </td>
                 </tr>
 

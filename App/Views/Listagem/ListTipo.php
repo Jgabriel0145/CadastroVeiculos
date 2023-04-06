@@ -29,7 +29,7 @@
                     </th>
 
                     <td>
-                        <a href="/tipo/form?id=<?= $item->id ?>"><?= $item->tipo ?></a>
+                        <a href="/tipo/form?id=<?= $item->id ?>" class="nome-listagem"><?= $item->tipo ?></a>
                     </td>
                 </tr>
 
