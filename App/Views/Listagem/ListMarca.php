@@ -25,7 +25,7 @@
             <?php foreach($model->rows as $item): ?>
                 <tr>
                     <th scope="row">
-                        <a href="/marca/delete?id=<?= $item->id ?>">X</a>
+                        <a class="btn-excluir" href="/marca/delete?id=<?= $item->id ?>">Excluir(X)</a>
                     </th>
 
                     <td>

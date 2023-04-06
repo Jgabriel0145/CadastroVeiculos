@@ -39,7 +39,7 @@
             <?php foreach($model->rows as $item_veiculo): ?>
                 <tr>
                     <th scope="row">
-                        <a href="/combustivel/delete?id=<?= $item_veiculo->id ?>">X</a>
+                        <a class="btn-excluir" href="/combustivel/delete?id=<?= $item_veiculo->id ?>">Excluir(X)</a>
                     </th>
 
 
