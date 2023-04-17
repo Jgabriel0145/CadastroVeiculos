@@ -18,7 +18,7 @@ class VeiculoDAO extends DAO
         $stmt = $this->conexao->prepare($sql);
 
 
-        $stmt->bindValue(1, $model->modelo);
+        $stmt->bindValue(1, strtoupper($model->modelo));
         $stmt->bindValue(2, $model->ano);
         $stmt->bindValue(3, $model->cor);
         $stmt->bindValue(4, $model->numero_chassi);

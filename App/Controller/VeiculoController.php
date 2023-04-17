@@ -8,7 +8,6 @@ use App\Model\FabricanteModel;
 use App\Model\TipoModel;
 use App\Model\CombustivelModel;
 
-use \Exception;
 
 class VeiculoController extends Controller
 {

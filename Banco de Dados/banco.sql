@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `db_veiculos`.`combustiveis` (
   `nome` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `db_veiculos`.`fabricantes` (
   `cnpj` CHAR(14) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
+AUTO_INCREMENT = 3
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `db_veiculos`.`marcas` (
   `marca` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `db_veiculos`.`tipos` (
   `tipo` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -80,12 +80,12 @@ CREATE TABLE IF NOT EXISTS `db_veiculos`.`veiculos` (
   `cor` VARCHAR(255) NULL DEFAULT NULL,
   `numero_chassi` CHAR(17) NULL DEFAULT NULL,
   `km` DOUBLE NULL DEFAULT NULL,
-  `revisao` TINYINT NULL DEFAULT 0,
-  `sinistro` TINYINT NULL DEFAULT 0,
-  `roubo_furto` TINYINT NULL DEFAULT 0,
-  `aluguel` TINYINT(1) NULL DEFAULT 0,
-  `venda` TINYINT(1) NULL DEFAULT 0,
-  `particular` TINYINT(1) NULL DEFAULT 0,
+  `revisao` TINYINT NULL DEFAULT '0',
+  `sinistro` TINYINT NULL DEFAULT '0',
+  `roubo_furto` TINYINT NULL DEFAULT '0',
+  `aluguel` TINYINT(1) NULL DEFAULT '0',
+  `venda` TINYINT(1) NULL DEFAULT '0',
+  `particular` TINYINT(1) NULL DEFAULT '0',
   `observacao` VARCHAR(255) NULL DEFAULT NULL,
   `id_marca` INT NULL DEFAULT NULL,
   `id_fabricante` INT NULL DEFAULT NULL,
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `db_veiculos`.`veiculos` (
     FOREIGN KEY (`id_combustivel`)
     REFERENCES `db_veiculos`.`combustiveis` (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 4
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -117,6 +117,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
 
 
 

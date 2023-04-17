@@ -72,7 +72,7 @@
                     </td>
 
                     <td>
-                        <?php if ($item_veiculo->revisao == 1 or $item_veiculo->sinistro == true): ?> 
+                        <?php if ($item_veiculo->sinistro == 1 or $item_veiculo->sinistro == true): ?> 
                             <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
                             <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
@@ -80,7 +80,7 @@
                     </td>
 
                     <td>
-                        <?php if ($item_veiculo->revisao == 1 or $item_veiculo->roubo_furto == true): ?> 
+                        <?php if ($item_veiculo->roubo_furto == 1 or $item_veiculo->roubo_furto == true): ?> 
                             <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
                             <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
@@ -88,7 +88,7 @@
                     </td>
 
                     <td>
-                        <?php if ($item_veiculo->revisao == 1 or $item_veiculo->aluguel == true): ?> 
+                        <?php if ($item_veiculo->aluguel == 1 or $item_veiculo->aluguel == true): ?> 
                             <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
                             <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
@@ -96,7 +96,7 @@
                     </td>
 
                     <td>
-                        <?php if ($item_veiculo->revisao == 1 or $item_veiculo->venda == true): ?> 
+                        <?php if ($item_veiculo->venda == 1 or $item_veiculo->venda == true): ?> 
                             <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
                             <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
@@ -104,7 +104,7 @@
                     </td>
 
                     <td>
-                        <?php if ($item_veiculo->revisao == 1 or $item_veiculo->particular == true): ?> 
+                        <?php if ($item_veiculo->particular == 1 or $item_veiculo->particular == true): ?> 
                             <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Sim</a>
                         <?php else: ?>
                             <a href="/veiculo/form?id=<?= $item_veiculo->id ?>" class="nome-listagem">Não</a>
