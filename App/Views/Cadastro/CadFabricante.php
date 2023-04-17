@@ -21,7 +21,7 @@
                 maxlength="255"><br><br>
 
         <label for="cnpj_fabricante">CNPJ:</label>
-        <input type="text" placeholder="12345678000101" name="cnpj_fabricante" id="cnpj_fabricante" value="<?= $model->cnpj ?>"
+        <input type="text" placeholder="12.345.678/0001-01" name="cnpj_fabricante" id="cnpj_fabricante" value="<?= $model->cnpj ?>"
         maxlength="18" minlength="18"><br><br>
         
 

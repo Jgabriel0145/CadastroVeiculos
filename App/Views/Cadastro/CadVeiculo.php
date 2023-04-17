@@ -36,8 +36,8 @@
                 maxlength="255"><br>
 
         <label for="ano_veiculo">Ano:</label>
-        <input type="text" name="ano_veiculo" id="ano_veiculo" value="<?= $model_veiculo->ano ?>"
-                maxlength="4" minlength="4"><br>
+        <input type="year" name="ano_veiculo" id="ano_veiculo" value="<?= $model_veiculo->ano ?>"
+                maxlength="4" minlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"><br>
 
         <label for="cor_veiculo">Cor:</label>
         <input type="text" name="cor_veiculo" id="cor_veiculo" value="<?= $model_veiculo->cor ?>"
