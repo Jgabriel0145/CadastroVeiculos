@@ -6,6 +6,8 @@ use App\Controller\MarcaController;
 use App\Controller\TipoController;
 use App\Controller\VeiculoController;
 
+use App\Controller\TestesController;
+
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch($url)
@@ -95,7 +97,17 @@ switch($url)
         VeiculoController::delete();
         break;
 
-    //
+    
+    //Testes
+    case '/testes':
+        TestesController::index();
+        break;
+
+    case '/testes/fazer':
+        TestesController::executar();
+        header('Location: /testes');
+        break;
+
     default:
         include 'Views/Inicio.php';
         break;
