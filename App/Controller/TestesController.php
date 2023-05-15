@@ -2,13 +2,16 @@
 
 namespace App\Controller;
 
+use App\Model\TestesModel;
+
 class TestesController extends Controller
 {
     public static function executar()
     {
-        $comando = $_POST['txt_comando'];
+        $model = new TestesModel();
 
-        shell_exec($comando);
+        $model->backupbanco();
+
 
         parent::render('Testes/Testes');
     }

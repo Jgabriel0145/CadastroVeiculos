@@ -11,8 +11,7 @@
 <body>
 
     <form method="post" action="/testes/fazer">
-        <input type="text" name="txt_comando"/>
-        <button type="submit">Enviar</button>
+        <button type="submit">Backup</button>
     </form>
     
 </body>
