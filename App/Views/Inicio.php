@@ -15,31 +15,30 @@
         {
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content:center;
         }
         #div1
         {
             background-color: rgba(0, 0, 0, 0.9);
             padding: 2.5%;
-            position:absolute;
-            left: -500px;
-            height:800px;
-            width:300px;
-            border-radius: 15px;
+            width:20%;
+            height:90%;
+
             color: #fff;
-            z-index:2;
+            
         }
         #div2{
-            z-index:2;
-            margin:10px;
             background-color: rgba(0, 0, 0, 0.9);
+            padding-top:15%;
             padding: 2.5%;
-            position:absolute;
-            left:-200px;
-            height:800px;
-            width:300px;
-            border-radius: 15px;
+            height:580px;
+            width: 15%;
             color: #fff;
+            align-items: center;
         }
+        
 
         input
         {
@@ -52,11 +51,13 @@
 
         button
         {
+            text-align:right;
+            display:inline; 
             background-color: dodgerblue;
             border: none;
             padding: 15px;
-            width: 100%;
-            border-radius: 10px;
+            width:30%;
+            border-radius:15px;
             color: white;
             font-size: 15px;
             margin-top: 5px;
@@ -66,6 +67,7 @@
         button:hover{
             background-color: deepskyblue;
             cursor: pointer;
+            
         }
 
         img{
@@ -76,9 +78,8 @@
         }
 
         #aside {
-            z-index:1;
             position:relative;
-            background: #000; 
+            background: #fff; 
             width: 19%;
             height: 490px; 
             margin-top: 10px; 
@@ -93,13 +94,14 @@
 
 <body>
 
-    <img src="Views/img/tela_fundo.jpg" height="969px" width="1990px" alt="carro na estrada">
+    <!-- <img src="Views/img/tela_fundo.jpg" height="969px" width="1990px" alt="carro na estrada"> -->
     
  
     
-    <div id="aside">
+    <!-- <div id="aside"> -->
         <div id="div1">
             <div class="itemdiv">
+                <!-- <img src="C:\Users\Usuario\Desktop\CadastroVeiculos\App\Views\img\carro.png" alt=""> -->
                 <h1>Cadastro de Veículos</h1>
                 <p>Combustível:</p>
                 <button onclick="document.location='/combustivel/form'" >Cadastro</button><br>
@@ -123,6 +125,7 @@
         
         <div id="div2">
             <div class="itemdiv">
+                <br><br><br><br><br><br><br>
                 <p>Tipo:</p>
                 <button onclick="document.location='/tipo/form'" >Cadastro</button><br>
                 <button onclick="document.location='/tipo'" >Listagem</button><br><br>
@@ -134,7 +137,7 @@
                 <button onclick="document.location='/veiculo'" >Listagem</button><br><br>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 
 
 
