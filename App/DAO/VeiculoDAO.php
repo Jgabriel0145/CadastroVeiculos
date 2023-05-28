@@ -17,7 +17,6 @@ class VeiculoDAO extends DAO
         $sql = "INSERT INTO veiculos (modelo, ano, cor, numero_chassi, km, revisao, sinistro, roubo_furto, aluguel, venda, particular, observacao, id_marca, id_fabricante, id_tipo, id_combustivel) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
         $stmt = $this->conexao->prepare($sql);
 
-
         $stmt->bindValue(1, strtoupper($model->modelo));
         $stmt->bindValue(2, $model->ano);
         $stmt->bindValue(3, $model->cor);

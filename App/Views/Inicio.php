@@ -136,6 +136,12 @@
                 <button onclick="document.location='/veiculo/form'" >Cadastro</button><br>
                 <button onclick="document.location='/veiculo'" >Listagem</button><br><br>
             </div>
+
+            <div class="itemdiv">
+                <p>Backup:</p>
+                <button onclick="document.location='/backup/exportar'">Exportar Banco</button><br><br>
+                <button onclick="document.location='/backup/importar'">Importar Banco</button><br><br>
+            </div>
         </div>
     <!-- </div> -->
 

@@ -6,6 +6,8 @@ use App\Controller\MarcaController;
 use App\Controller\TipoController;
 use App\Controller\VeiculoController;
 
+use App\Controller\BackupController;
+
 use App\Controller\TestesController;
 
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -95,6 +97,16 @@ switch($url)
 
     case '/veiculo/delete':
         VeiculoController::delete();
+        break;
+
+    
+    //Backup
+    case '/backup/exportar':
+        BackupController::ExportarBanco();
+        break;
+
+    case '/backup/importar':
+        BackupController::ImportarBanco();
         break;
 
     
