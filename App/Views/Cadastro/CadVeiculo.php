@@ -41,11 +41,21 @@
             background-color: rgba(0, 0, 0, 0.9);
             border-radius: 15px;
             color: #fff;
+            height:900px;
         }
         #btnEnv_cadVeiculo
         {
             position:relative;
-            bottom:200px;
+            bottom:500px;
+        }
+        #btnEnv_cadVeiculo
+        {
+            position:relative;
+            bottom:500px;
+        }
+        #btnVol_cadVeiculo{
+            position:relative;
+            bottom:500px;
         }
         select
         {
@@ -176,7 +186,7 @@
     </form>
     
     <br>
-    <button onclick="document.location='/'" >Voltar</button>
+    <button id="btnVol_cadVeiculo" onclick="document.location='/'" >Voltar</button>
     </div>
 
 

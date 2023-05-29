@@ -13,6 +13,7 @@
         
         body
         {
+            background-image: linear-gradient(45deg, cyan, yellow);
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             justify-content: center;
@@ -25,7 +26,7 @@
             padding: 2.5%;
             width:20%;
             height:90%;
-
+            
             color: #fff;
             
         }
@@ -37,6 +38,11 @@
             width: 15%;
             color: #fff;
             align-items: center;
+            
+        }
+        #div2 .itemdiv {
+            position: relative;
+            bottom: 100px;
         }
         
 
@@ -86,6 +92,7 @@
             margin-bottom: 10px;
             margin-right:10px;
         }
+        
 
 
         
@@ -144,6 +151,7 @@
             </div>
         </div>
     <!-- </div> -->
+
 
 
 
