@@ -10,7 +10,7 @@ class BackupController extends Controller
     {
         try
         {
-            if(!is_dir('C:/JoaoGabriel_Lucas_3DS/Backup'))
+            if(!is_dir('D:/JoaoGabriel_Lucas_3DS/Backup'))
             {
                 if(file_exists(BASEDIR . '/App/Controller/Assets/CriarRepos.bat'))
                     exec(BASEDIR . '/App/Controller/Assets/CriarRepos.bat');
@@ -30,9 +30,9 @@ class BackupController extends Controller
 
     public static function ImportarBanco()
     {
-        if(is_dir('C:/JoaoGabriel_Lucas_3DS/Backup'))
+        if(is_dir('D:/JoaoGabriel_Lucas_3DS/Backup'))
         {
-            if(file_exists('C:/JoaoGabriel_Lucas_3DS/Backup/banco_backup.sql'))
+            if(file_exists('D:/JoaoGabriel_Lucas_3DS/Backup/banco_backup.sql'))
             {
                 if(file_exists(BASEDIR . '/App/Controller/Assets/Import.bat'))
                     exec(BASEDIR . '/App/Controller/Assets/Import.bat');
