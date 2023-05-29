@@ -9,15 +9,16 @@
     body
     {
         font-family: Arial, Helvetica, sans-serif;
-        background-image: linear-gradient(45deg, cyan, yellow);
         display: flex;
         justify-content: center;
-        padding: 5%;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
 
     div
     {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgb(0, 0, 0);
         padding: 5%;
         border-radius: 15px;
         color: #fff;
@@ -38,16 +39,28 @@
         background-color: dodgerblue;
         border: none;
         padding: 15px;
-        width: 100%;
+        width: 45%;
         border-radius: 10px;
         color: white;
         font-size: 15px;
+        display: inline-block;
+    }
+    button .enviar{
+        
+    }
+    .voltar{
+        background-color:#e32d2d;
+        margin-left: 5%;
     }
 
     button:hover
     {
         background-color: deepskyblue;
         cursor: pointer;
+
+    }
+    .voltar:hover{
+        background-color:#bd0d0d;
     }
         
 
