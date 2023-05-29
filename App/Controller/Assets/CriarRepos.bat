@@ -1,4 +1,5 @@
-cd C:/
+cd\
+cd D:
 
 md JoaoGabriel_Lucas_3DS
 
