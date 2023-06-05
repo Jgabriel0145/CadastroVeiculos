@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro de Tipos</title>
 
+    <style>
+        body{
+            background-image: url('/Views/img/Fundo_Tipo.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    </style>
+
     <?php include 'style.php'?>
 </head>
 

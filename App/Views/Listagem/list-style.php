@@ -9,7 +9,6 @@
     body
     {
         font-family: Arial, Helvetica, sans-serif;
-        background-image: linear-gradient(45deg, cyan, yellow);
         display: flex;
         justify-content: center;
         padding: 5%;
@@ -38,7 +37,8 @@
         background-color: dodgerblue;
         border: none;
         padding: 15px;
-        width: 100%;
+        margin:15px;
+        width: 45%;
         border-radius: 10px;
         color: white;
         font-size: 15px;
@@ -73,6 +73,18 @@
     h1
     {
         text-align:center;
+    }
+    .pagInicial{
+
+        margin: 2% 0 0 0;
+        background-color:#e32d2d;
+        width: 45%;
+
+
+    }
+    .cadMais{
+        background-color:#289942;
+        width: 45%;
     }
 
 

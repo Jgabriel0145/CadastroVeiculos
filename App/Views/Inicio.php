@@ -13,12 +13,16 @@
         
         body
         {
-            background-image: linear-gradient(45deg, cyan, yellow);
+            
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             align-content:center;
+            background-image: url('/Views/img/Fundo_Inicial.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; 
         }
         #div1
         {

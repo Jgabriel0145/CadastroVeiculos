@@ -45,22 +45,29 @@
         font-size: 15px;
         display: inline-block;
     }
-    button .enviar{
-        
+    .enviar{
+        background-color:#289942;
+        width: 100%;
     }
     .voltar{
+        margin: 2% 0 0 0;
         background-color:#e32d2d;
-        margin-left: 5%;
+        width: 100%;
     }
 
     button:hover
     {
-        background-color: deepskyblue;
+        background-color: #3ac95b;
         cursor: pointer;
 
     }
     .voltar:hover{
         background-color:#bd0d0d;
+    }
+    .irLista{
+        
+        
+        cursor: pointer;
     }
         
 

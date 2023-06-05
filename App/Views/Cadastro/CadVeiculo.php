@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro de Veículos</title>
 
+    <style>
+        body{
+            background-image: url('/Views/img/Fundo_Veiculo.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    </style>
+
     <?php 
 
         $model_veiculo = $model[0];

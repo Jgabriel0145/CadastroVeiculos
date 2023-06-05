@@ -20,6 +20,7 @@
 <body>
     
     <div>
+        
         <form method="post" action="/combustivel/form/save">
             <h1>Combustível</h1>
 
@@ -30,11 +31,15 @@
                 maxlength="255">
             <br><br>
 
-            <button class="voltar" onclick="document.location='/'" >Voltar</button>    
+            
             <button class="enviar" type="submit">Enviar</button>
             
             
         </form>
+
+        <button class="voltar" onclick="document.location='/'" >Página Inicial</button>
+        
+        
 
         <br>
         

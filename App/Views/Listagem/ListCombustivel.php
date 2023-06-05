@@ -7,6 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <?php include 'list-style.php'; ?>
 
+    <style>
+        body{
+            background-image: url('/Views/img/posto_gasolina.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    </style>
 
 
 </head>
@@ -52,7 +61,9 @@
 
 
     <br><br>
-    <button onclick="document.location='/'" class="btn btn-primary" style="margin-left: 1%;">Voltar</button>
+    <button onclick="document.location='/'" class="pagInicial" style="margin-left: 1%;">Página Inicial</button>
+    <button onclick="document.location='/combustivel/form'" class="cadMais" style="margin-left: 1%;">Cadastrar Mais</button>
+    
     </div>
 
 
