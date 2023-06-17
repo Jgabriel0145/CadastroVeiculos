@@ -8,8 +8,6 @@ use App\Controller\VeiculoController;
 
 use App\Controller\BackupController;
 
-use App\Controller\TestesController;
-
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch($url)
@@ -109,16 +107,6 @@ switch($url)
         BackupController::ImportarBanco();
         break;
 
-    
-    //Testes
-    case '/testes':
-        TestesController::index();
-        break;
-
-    case '/testes/fazer':
-        TestesController::executar();
-        header('Location: /testes');
-        break;
 
     default:
         include 'Views/Inicio.php';
