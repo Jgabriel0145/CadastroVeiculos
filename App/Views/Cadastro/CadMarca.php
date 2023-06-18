@@ -11,6 +11,8 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            overflow: hidden;
+            width: 100vw;
         }
 
     </style>
@@ -30,11 +32,11 @@
                 maxlength="255"><br>
 
         <br>
-        <button type="submit">Enviar</button>
+        <button class="enviar" type="submit">Enviar</button>
     </form>
 
     <br>
-    <button onclick="document.location='/'" >Voltar</button>
+    <button class="voltar" onclick="document.location='/'" >Página Inicial</button>
     </div>
 
 

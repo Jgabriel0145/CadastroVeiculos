@@ -12,6 +12,8 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            overflow: hidden;
+            width: 100vw;
         }
 
     </style>
@@ -27,7 +29,7 @@
             <input type="hidden" value="<?= $model->id ?>" name="id" />
 
             <label for="nome_combustivel">Nome:</label>
-            <input type="text" placeholder="Digite seu combustível" name="nome_combustivel" id="nome_combustivel" value="<?= $model->nome ?>"
+            <input type="text" placeholder="Digite seu combustível..." name="nome_combustivel" id="nome_combustivel" value="<?= $model->nome ?>"
                 maxlength="255">
             <br><br>
 
