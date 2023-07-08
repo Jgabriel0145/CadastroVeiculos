@@ -8,62 +8,62 @@
     <?php include 'list-style.php'; ?>
 
     <style>
-        body{
+        body
+        {
             background-image: url('/Views/img/posto_gasolina.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
         }
 
     </style>
-
 
 </head>
 
 <body>
     <div>
-    <h1>Listagem de Combustíveis</h1><br><br>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nome</th>
-            </tr>
-        </thead>
-  
-        <tbody>
-            <?php foreach($model->rows as $item): ?>
+        <h1>Listagem de Combustíveis</h1>
+        <br><br>
+        
+        <table class="table">
+            <thead>
                 <tr>
-                    <th scope="row">
-                        <a class="btn-excluir" href="/combustivel/delete?id=<?= $item->id ?>">Excluir(X)</a>
-                    </th>
-
-                    <td>
-                        <a class="nome-listagem" href="/combustivel/form?id=<?= $item->id ?>"><?= $item->nome ?></a>
-                    </td>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
                 </tr>
-
-            <?php endforeach ?>
-
-
-
-            <?php if (count($model->rows) == 0):?>
-
-                <tr>
-                    <th scope="row">
-                        <td colspan="5">Nenhum registro foi encontrado.</td>
-                    </th>
-                </tr>
-
-            <?php endif?>
-        </tbody>
-    </table>
-
-
-    <br><br>
-    <button onclick="document.location='/'" class="pagInicial" style="margin-left: 1%;">Página Inicial</button>
-    <button onclick="document.location='/combustivel/form'" class="cadMais" style="margin-left: 1%;">Cadastrar Mais</button>
+            </thead>
     
+            <tbody>
+                <?php foreach($model->rows as $item): ?>
+                    <tr>
+                        <th scope="row">
+                            <a class="btn-excluir" href="/combustivel/delete?id=<?= $item->id ?>">Excluir(X)</a>
+                        </th>
+
+                        <td>
+                            <a class="nome-listagem" href="/combustivel/form?id=<?= $item->id ?>"><?= $item->nome ?></a>
+                        </td>
+                    </tr>
+
+                <?php endforeach ?>
+
+
+
+                <?php if (count($model->rows) == 0):?>
+
+                    <tr>
+                        <th scope="row">
+                            <td colspan="3">Nenhum registro foi encontrado.</td>
+                        </th>
+                    </tr>
+
+                <?php endif?>
+            </tbody>
+        </table>
+
+
+        <br><br>
+        <div class="botoes-voltar">
+            <button onclick="document.location='/'" class="pagInicial" style="margin-left: 1%;">Página Inicial</button>
+            <button onclick="document.location='/combustivel/form'" class="cadMais" style="margin-left: 1%;">Cadastrar Mais</button>
+        </div>
     </div>
 
 

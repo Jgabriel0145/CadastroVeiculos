@@ -4,24 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro de Tipos</title>
+    <?php include 'style.php'?>
 
     <style>
-        body{
+        body
+        {
             background-image: url('/Views/img/Fundo_Tipo.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            overflow: hidden;
-            width: 100vw;
         }
 
     </style>
 
-    <?php include 'style.php'?>
 </head>
 
-<body>
-        
+<body> 
     <div>
         <form method="post" action="/tipo/form/save">
             <h1>Tipo</h1>
@@ -38,8 +33,5 @@
         <br>
         <button class="voltar" onclick="document.location='/'" >Página Inicial</button>
     </div>
-
-
-
 </body>
 </html>

@@ -4,20 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro de Fabricantes</title>
+    <?php include 'style.php'?>
 
     <style>
         body{
             background-image: url('/Views/img/Fundo_Fabricante.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 100vw;
-            overflow: hidden;
         }
-
     </style>
-
-    <?php include 'style.php'?>
+    
 </head>
 
 <body>

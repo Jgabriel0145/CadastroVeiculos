@@ -1,4 +1,10 @@
 <style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
 
     html
     {
@@ -11,7 +17,11 @@
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
         justify-content: center;
-        padding: 5%;
+        padding: 3%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     div
@@ -19,7 +29,7 @@
         background-color: rgba(0, 0, 0, 0.9);
         padding: 5%;
         border-radius: 15px;
-        color: #fff;
+        color: #FFFFFF;
         width: 100%;
     }
 
@@ -29,7 +39,6 @@
         outline: none;
         font-size: 15px;
         border-radius: 10px;
-
     }
 
     button
@@ -37,11 +46,11 @@
         background-color: dodgerblue;
         border: none;
         padding: 15px;
-        margin:15px;
+        margin: 15px;
         width: 45%;
         border-radius: 10px;
-        color: white;
-        font-size: 15px;
+        color: #FFFFFF;
+        font-size: 12pt;
     }
 
     button:hover
@@ -53,44 +62,56 @@
     .btn-excluir
     {
         background-color: red;
-        color: white;
-        border-radius:5px;
+        color: #FFFFFF;
+        border-radius: 5px;
         padding: 5px;
-        text-decoration:none;
+        text-decoration: none;
     }
 
     .nome-listagem
     {
-        color:white;
-        text-decoration:none;
+        color: #FFFFFF;
+        text-decoration: none;
     }
 
     th, td
     {
-        color:white;
+        color: #FFFFFF;
     }
     
     h1
     {
-        text-align:center;
+        text-align: center;
     }
-    .pagInicial{
 
-        margin: 2% 0 0 0;
-        background-color:#e32d2d;
-        width: 45%;
-
-
-    }
-    .cadMais{
-        background-color:#289942;
+    .pagInicial
+    {
+        background-color: #CC0000;
         width: 45%;
     }
 
+    .pagInicial:hover
+    {
+        background-color: #E32D2D;
+    }
 
+    .cadMais
+    {
+        background-color: #008000;
+        width: 45%;
+    }
 
+    .cadMais:hover
+    {
+        background-color: #289942;
+    }
 
-
-
+    .botoes-voltar
+    {
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
 
 </style>

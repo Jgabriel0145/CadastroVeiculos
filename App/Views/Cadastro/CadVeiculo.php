@@ -42,7 +42,7 @@
         {
             background-color: rgb(0, 0, 0);
             border-radius: 15px;
-            color: #fff;
+            color: #FFFFFF;
         }
 
         input
@@ -55,38 +55,38 @@
 
         button
         {
-            background-color: dodgerblue;
+            background-color: #1E90FF;
             border: none;
             padding: 15px;
             width: 45%;
             border-radius: 10px;
-            color: white;
+            color: #FFFFFF;
             font-size: 15px;
             display: inline-block;
         }
 
         .enviar
         {
-            background-color:#289942;
+            background-color: #289942;
             width: 100%;
         }
 
         .voltar
         {
             margin: 2% 0 0 0;
-            background-color:#e32d2d;
+            background-color: #E32D2D;
             width: 100%;
         }
 
         button:hover
         {
-            background-color: #3ac95b;
+            background-color: #3AA95B;
             cursor: pointer;
         }
 
         .voltar:hover
         {
-            background-color:#bd0d0d;
+            background-color: #BD0D0D;
         }
 
         .irLista
@@ -155,7 +155,7 @@
 
         #btn_enviar_cad_veiculo:hover
         {
-            background-color: #3ac95b;
+            background-color: #3AC95B;
             cursor: pointer;
         }
 
@@ -164,19 +164,19 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            background-color: transparent;
+            background-color: rgba(0, 0, 0, 0);
             margin-bottom: 2%;
         }
 
         #btn_voltar_cad_veiculo
         {
             width: 96%;
-            background-color: #bd0d0d;   
+            background-color: #BD0D0D;   
         }
 
         #btn_voltar_cad_veiculo:hover
         {
-            background-color: #e32d2d;
+            background-color: #E32D2D;
         }
     </style>
 
